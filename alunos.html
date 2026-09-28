@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050507">
+<meta name="description" content="Área de alunos Khronos E-Sports — treinamento competitivo de CS2.">
+<title>Khronos E-Sports | Alunos</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="./index.html">
+      <img src="./assets/khronos-logo.png" alt="Khronos">
+      <span class="brand-name">KHRONOS<span class="brand-sub">E-SPORTS</span></span>
+    </a>
+    <nav class="menu">
+      <a href="./index.html">INÍCIO</a>
+      <a href="./index.html#elenco">ELENCO</a>
+      <div class="drop"><button>JOGADORES ▾</button><div class="dropdown">
+        <a href="./configs/galano.html">Galano</a><a href="./configs/brx.html">BRX</a><a href="./configs/bruxao.html">Bruxao</a><a href="./configs/alone.html">Alone</a><a href="./configs/default.html">Default</a>
+      </div></div>
+      <a href="./configs.html">CONFIGURAÇÕES</a>
+      <a href="./index.html#historico">TORNEIOS</a>
+      <a class="academy-link" href="./academy.html">ACADEMY</a>
+      <a class="students-link active" href="./alunos.html">ALUNOS</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="students-hero">
+  <div class="students-hero-lines"></div>
+  <div class="students-glow pink"></div><div class="students-glow cyan"></div>
+  <div class="container students-hero-content">
+    <div class="kicker">KHRONOS E-SPORTS • TREINAMENTO COMPETITIVO</div>
+    <h1>ÁREA DOS<br><em>ALUNOS</em></h1>
+    <p class="students-lead">Treinamento de CS2 para quem quer evoluir de verdade. Conteúdo organizado, aulas gravadas e acesso exclusivo para alunos.</p>
+    <div class="students-actions">
+      <a class="btn" href="#curso">CONHECER O TREINAMENTO</a>
+      <a class="btn alt" href="#acesso">JÁ SOU ALUNO</a>
+    </div>
+    <div class="student-stats">
+      <div><b>CS2</b><span>Foco do treinamento</span></div>
+      <div><b>R$ 120</b><span>Acesso ao curso</span></div>
+      <div><b>ONLINE</b><span>Conteúdo gravado</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="curso" class="section student-course">
+  <div class="container">
+    <div class="heading"><div><div class="kicker">TREINAMENTO KHRONOS</div><h2>CURSO DE CS2</h2></div><p>Conteúdo para evolução competitiva</p></div>
+    <div class="course-layout">
+      <div class="course-info">
+        <span class="course-badge">TREINAMENTO COMPLETO</span>
+        <h3>EVOLUA SUA GAMEPLAY.</h3>
+        <p>Uma área exclusiva para alunos com aulas organizadas para trabalhar fundamentos, mira, movimentação, posicionamento, tomada de decisão e conceitos do competitivo.</p>
+        <div class="feature-grid">
+          <div><strong>01</strong><span>Fundamentos</span></div>
+          <div><strong>02</strong><span>Mira e movimentação</span></div>
+          <div><strong>03</strong><span>Posicionamento</span></div>
+          <div><strong>04</strong><span>Leitura de jogo</span></div>
+          <div><strong>05</strong><span>Comunicação</span></div>
+          <div><strong>06</strong><span>Conceitos competitivos</span></div>
+        </div>
+      </div>
+      <aside class="course-buy">
+        <div class="price-label">ACESSO AO TREINAMENTO</div>
+        <div class="price">R$ <strong>120</strong><small>,00</small></div>
+        <div class="price-note">Pagamento único via Pix</div>
+        <ul class="check-list">
+          <li>Área exclusiva do aluno</li>
+          <li>Aulas gravadas</li>
+          <li>Conteúdo organizado por módulos</li>
+          <li>Acesso liberado após confirmação</li>
+        </ul>
+        <button class="btn buy-btn" type="button" onclick="openPayment()">COMPRAR COM PIX</button>
+        <p class="secure-note">Pagamento protegido e confirmação automática quando a integração estiver conectada.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="acesso" class="section alt student-access">
+  <div class="container">
+    <div class="heading"><div><div class="kicker">ÁREA RESTRITA</div><h2>ACESSO DO ALUNO</h2></div><p>Entre para acessar suas aulas</p></div>
+    <div class="access-grid">
+      <div class="access-card">
+        <span class="access-icon">↳</span>
+        <h3>JÁ TENHO UMA CONTA</h3>
+        <p>Entre com seu e-mail e senha para acessar o conteúdo liberado.</p>
+        <form onsubmit="demoLogin(event)">
+          <label>E-MAIL</label><input type="email" required placeholder="seu@email.com">
+          <label>SENHA</label><input type="password" required placeholder="••••••••">
+          <button class="btn" type="submit">ENTRAR NA ÁREA</button>
+        </form>
+      </div>
+      <div class="access-card register-card">
+        <span class="access-icon">+</span>
+        <h3>AINDA NÃO SOU ALUNO</h3>
+        <p>Crie seu cadastro e depois realize o pagamento de R$ 120,00 para liberar o treinamento.</p>
+        <form onsubmit="demoRegister(event)">
+          <label>NOME</label><input type="text" required placeholder="Seu nome">
+          <label>E-MAIL</label><input type="email" required placeholder="seu@email.com">
+          <label>SENHA</label><input type="password" minlength="6" required placeholder="Mínimo de 6 caracteres">
+          <button class="btn" type="submit">CRIAR CONTA</button>
+        </form>
+      </div>
+    </div>
+    <div class="demo-notice"><strong>IMPORTANTE:</strong> esta versão do site já possui a interface completa, mas o login, banco de dados e confirmação real do Pix precisam ser conectados ao backend antes de aceitar pagamentos reais.</div>
+  </div>
+</section>
+
+<section class="section student-lessons">
+  <div class="container">
+    <div class="heading"><div><div class="kicker">CONTEÚDO EXCLUSIVO</div><h2>SUAS AULAS</h2></div><p>Liberação após pagamento aprovado</p></div>
+    <div class="lesson-list">
+      <article class="lesson locked"><div class="lesson-number">01</div><div class="lesson-main"><span>MÓDULO 01</span><h3>Fundamentos do CS2</h3><p>Base mecânica e conceitos essenciais para começar a evolução.</p></div><div class="lock">🔒</div></article>
+      <article class="lesson locked"><div class="lesson-number">02</div><div class="lesson-main"><span>MÓDULO 02</span><h3>Mira e movimentação</h3><p>Controle, posicionamento da mira e movimentação durante os duelos.</p></div><div class="lock">🔒</div></article>
+      <article class="lesson locked"><div class="lesson-number">03</div><div class="lesson-main"><span>MÓDULO 03</span><h3>Posicionamento competitivo</h3><p>Como ocupar espaço e tomar decisões melhores em cada round.</p></div><div class="lock">🔒</div></article>
+      <article class="lesson locked"><div class="lesson-number">04</div><div class="lesson-main"><span>MÓDULO 04</span><h3>Leitura de jogo e comunicação</h3><p>Informações, timing, calls e leitura das ações do adversário.</p></div><div class="lock">🔒</div></article>
+    </div>
+    <div class="lesson-note">Os vídeos podem ser incorporados aqui usando os IDs dos vídeos do YouTube configurados como <strong>Não listado</strong>. A proteção real do conteúdo deverá ser feita pelo backend da área do aluno.</div>
+  </div>
+</section>
+
+<section class="student-cta"><div class="container student-cta-inner"><div><div class="kicker">PRONTO PARA EVOLUIR?</div><h2>COMECE SEU TREINAMENTO.</h2><p>Acesso ao treinamento por R$ 120,00, com pagamento via Pix.</p></div><button class="btn" onclick="openPayment()">QUERO SER ALUNO</button></div></section>
+</main>
+
+<div id="paymentModal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" onclick="closePayment()"></div>
+  <div class="modal-card">
+    <button class="modal-close" onclick="closePayment()" aria-label="Fechar">×</button>
+    <div class="kicker">KHRONOS E-SPORTS • PAGAMENTO</div>
+    <h2>COMPRAR TREINAMENTO</h2>
+    <p class="modal-description">Valor do treinamento: <strong>R$ 120,00</strong></p>
+    <div class="pix-placeholder"><div class="pix-mark">PIX</div><span>QR CODE</span><small>Será gerado pelo servidor de pagamento</small></div>
+    <div class="pix-copy"><span>PIX COPIA E COLA</span><div>O código será disponibilizado após a integração com o Mercado Pago.</div></div>
+    <button class="btn" onclick="showIntegrationMessage()">GERAR PAGAMENTO DE R$ 120</button>
+    <p id="paymentMessage" class="payment-message"></p>
+  </div>
+</div>
+
+<footer>KHRONOS E-SPORTS • ÁREA DOS ALUNOS • COUNTER-STRIKE • © 2026</footer>
+<script>
+function openPayment(){const m=document.getElementById('paymentModal');m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');}
+function closePayment(){const m=document.getElementById('paymentModal');m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');}
+function showIntegrationMessage(){document.getElementById('paymentMessage').textContent='A interface está pronta. Para gerar um QR Code Pix real e liberar automaticamente as aulas, conecte este botão ao backend/Mercado Pago.';}
+function demoLogin(e){e.preventDefault();alert('A interface de login está pronta. O acesso real será validado pelo backend.');}
+function demoRegister(e){e.preventDefault();alert('Cadastro visual concluído. Para salvar a conta e liberar o curso após o Pix, é necessário conectar o backend.');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePayment();});
+</script>
+</body>
+</html>
